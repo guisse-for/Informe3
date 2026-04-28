@@ -1,0 +1,157 @@
+/* ===== FONDO ===== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff9bb3, #ffd6e0);
+}
+
+/* ===== NAVBAR ===== */
+nav {
+    background: #ff4d88;
+    padding: 20px;
+    text-align: center;
+}
+
+nav h1 {
+    color: white;
+    margin: 0;
+    font-size: 28px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* ===== MEGA MENU ===== */
+.mega-menu {
+    display: none;
+    position: absolute;
+    background: white;
+    padding: 20px;
+    top: 40px;
+    left: 0;
+    width: 500px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+
+.item:hover .mega-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.columna {
+    width: 30%;
+}
+
+.columna h3 {
+    color: #ff4d88;
+}
+
+.columna a {
+    display: block;
+    color: black;
+    padding: 5px 0;
+}
+
+.columna a:hover {
+    color: #ff4d88;
+}
+
+/* ===== BOTÓN REGRESAR ===== */
+.btn-regresar {
+    margin: 20px;
+    padding: 10px 20px;
+    background: #ff4d88;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-regresar:hover {
+    background: #e6005c;
+}
+
+/* ===== CONTENEDOR ===== */
+.container {
+    width: 40%;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
+}
+
+/* ===== TÍTULO ===== */
+.container h2 {
+    text-align: center;
+    color: #ff4d88;
+}
+
+/* ===== GRUPOS ===== */
+.grupo {
+    margin-bottom: 15px;
+}
+
+.grupo label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* ===== INPUTS ===== */
+.grupo input,
+.grupo select,
+.grupo textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* ===== SELECT MULTIPLE ===== */
+select[multiple] {
+    height: auto;
+}
+
+/* ===== BOTÓN ===== */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: #ff4d88;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background: #e6005c;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    margin-top: 30px;
+    background: #ff4d88;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

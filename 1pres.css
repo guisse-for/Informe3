@@ -1,0 +1,184 @@
+/* 🔹 RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* 🔹 BODY */
+body {
+    background: linear-gradient(135deg, #ff9bb3, #ffd6e0);
+}
+
+/* 🔥 NAVBAR */
+nav {
+    background: #ff4d88;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+nav h1 {
+    color: white;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+/* 🔹 MENÚ */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+/* 🔹 LINKS */
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    display: block;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: #ff80aa;
+    border-radius: 5px;
+}
+
+/* 🔥 MEGA MENU */
+.item {
+    position: relative;
+}
+
+.mega-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff0f5;
+    color: black;
+    padding: 25px;
+    gap: 40px;
+    box-shadow: 0px 10px 30px rgba(255,77,136,0.3);
+    border-radius: 15px;
+    z-index: 100;
+}
+
+/* COLUMNAS */
+.columna {
+    display: flex;
+    flex-direction: column;
+}
+
+.columna h3 {
+    margin-bottom: 10px;
+    color: #ff4d88;
+}
+
+.columna a {
+    text-decoration: none;
+    color: #444;
+    margin-bottom: 5px;
+    transition: 0.3s;
+}
+
+.columna a:hover {
+    color: #ff4d88;
+}
+
+/* MOSTRAR MENU */
+.item:hover .mega-menu {
+    display: flex;
+}
+
+/* 🔥 TABLA */
+table {
+    width: 95%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background: #fff0f5;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 10px 25px rgba(255,77,136,0.3);
+}
+
+/* ENCABEZADO */
+table tr:first-child {
+    background: #ff4d88;
+    color: white;
+    font-weight: bold;
+}
+
+/* CELDAS */
+table td {
+    border: 1px solid #ffc1d6;
+    padding: 12px;
+    text-align: center;
+}
+
+/* FILAS */
+table tr:nth-child(even) {
+    background: #fff5f8;
+}
+
+table tr:hover {
+    background: #ffd6e0;
+    transition: 0.3s;
+}
+
+/* 🥇🥈🥉 */
+table tr:nth-child(2) { background: #ffe4ec; }
+table tr:nth-child(3) { background: #fce4ec; }
+table tr:nth-child(4) { background: #f8bbd0; }
+
+/* 🖼️ IMÁGENES */
+table img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #ff4d88;
+}
+
+/* 🔻 FOOTER */
+footer {
+    margin-top: 40px;
+    background: #ff4d88;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* 📱 RESPONSIVE */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .mega-menu {
+        position: static;
+        transform: none;
+        display: none;
+        flex-direction: column;
+    }
+
+    .item:hover .mega-menu {
+        display: block;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    table img {
+        width: 40px;
+        height: 40px;
+    }
+}

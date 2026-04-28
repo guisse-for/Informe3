@@ -1,0 +1,166 @@
+/* 🔹 FUENTE */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* 🔹 RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* 🔹 BODY */
+body {
+    background: linear-gradient(135deg, #ff9bb3, #ffd6e0);
+}
+
+/* 🔥 NAVBAR (MISMO ESTILO ANTERIOR) */
+nav {
+    background: #ff4d88;
+    padding: 20px;
+    text-align: center;
+}
+
+nav h1 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* 🔹 MENÚ */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* 🔹 LINKS */
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    display: block;
+    transition: 0.3s;
+}
+
+/* HOVER */
+nav ul li a:hover {
+    background-color: #ff80aa;
+    border-radius: 5px;
+}
+
+/* 🔥 MEGA MENU (MISMO MODELO) */
+.item {
+    position: relative;
+}
+
+.mega-menu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: #fff0f5;
+    padding: 20px;
+    gap: 30px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    z-index: 10;
+}
+
+/* COLUMNAS */
+.columna {
+    display: flex;
+    flex-direction: column;
+}
+
+.columna h3 {
+    margin-bottom: 10px;
+    color: #ff4d88;
+}
+
+.columna a {
+    text-decoration: none;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.columna a:hover {
+    color: #ff4d88;
+}
+
+/* MOSTRAR MENU */
+.item:hover .mega-menu {
+    display: flex;
+}
+
+/* 🔹 CONTENEDOR */
+.padre {
+    width: 90%;
+    margin: 40px auto;
+}
+
+/* 🔹 TARJETA */
+.nieto {
+    background: #fff0f5;
+    width: 500px;
+    max-width: 100%;
+    margin: auto;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 8px 20px rgba(255, 77, 136, 0.3);
+    transition: 0.3s;
+}
+
+.nieto:hover {
+    transform: translateY(-10px);
+}
+
+/* 🔹 TÍTULO */
+.nieto h1 {
+    color: #ff4d88;
+    margin-bottom: 15px;
+}
+
+/* 🔹 IMAGEN */
+.nieto img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 15px 0;
+    border-radius: 10px;
+}
+
+/* 🔹 TEXTO */
+.nieto p {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.5;
+}
+
+/* 🔥 FOOTER */
+footer {
+    margin-top: 40px;
+    background: #ff4d88;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* 📱 RESPONSIVE */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .mega-menu {
+        position: static;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nieto {
+        width: 90%;
+    }
+}

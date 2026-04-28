@@ -1,0 +1,170 @@
+/* 🔹 RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* 🔹 BODY */
+body{
+    background: linear-gradient(135deg, #ff9bb3, #ffd6e0);
+}
+
+/* 🔥 NAVBAR */
+nav{
+    background: #ff4d88;
+    padding: 20px;
+    text-align: center;
+}
+
+nav h1{
+    color: white;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+/* 🔹 MENÚ */
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    position: relative;
+}
+
+/* 🔹 LINKS */
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    display: block;
+    transition: 0.3s;
+}
+
+nav ul li a:hover{
+    background: #ff80aa;
+    border-radius: 5px;
+}
+
+/* 🔥 MEGA MENU */
+.mega-menu{
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+    gap: 30px;
+    z-index: 100;
+}
+
+.item:hover .mega-menu{
+    display: flex;
+}
+
+/* COLUMNAS */
+.columna{
+    display: flex;
+    flex-direction: column;
+}
+
+.columna h3{
+    color: #ff4d88;
+    margin-bottom: 10px;
+}
+
+.columna a{
+    text-decoration: none;
+    color: #444;
+    margin-bottom: 5px;
+}
+
+.columna a:hover{
+    color: #ff4d88;
+}
+
+/* 🔹 TABLA */
+table{
+    width: 95%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 10px 25px rgba(255,77,136,0.3);
+}
+
+/* ENCABEZADO */
+table tr:first-child{
+    background: #ff4d88;
+    color: white;
+    font-weight: bold;
+}
+
+/* CELDAS */
+table td{
+    border: 1px solid #ffc1d6;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* FILAS */
+table tr:nth-child(even){
+    background: #fff5f8;
+}
+
+/* 🔹 IMÁGENES */
+table img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #ff4d88;
+    transition: 0.3s;
+}
+
+table img:hover{
+    transform: scale(1.1);
+}
+
+/* 🔻 FOOTER */
+footer{
+    margin-top: 40px;
+    background: #ff4d88;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* 📱 RESPONSIVE */
+@media (max-width: 768px){
+
+    nav ul{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .mega-menu{
+        position: static;
+        transform: none;
+        flex-direction: column;
+    }
+
+    table{
+        font-size: 12px;
+    }
+
+    table img{
+        width: 40px;
+        height: 40px;
+    }
+}
